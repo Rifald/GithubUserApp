@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <RelativeLayout
+            android:id="@+id/relative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/cream">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_picture"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:src="@drawable/user1" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/iv_picture"
+                android:text="name"
+                android:textColor="@color/black"
+                android:layout_margin="10dp"
+                android:layout_toEndOf="@id/iv_picture" />
+            <View
+                android:id="@+id/separator"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black"
+                android:layout_toRightOf="@+id/iv_picture"
+                android:layout_below="@id/tv_name"
+                android:layout_toEndOf="@+id/iv_picture" />
+
+            <TextView
+                android:id="@+id/tv_loc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/iv_picture"
+                android:text="location"
+                android:textColor="@color/black"
+                android:layout_margin="10dp"
+                android:layout_below="@+id/separator"
+                android:layout_toEndOf="@id/iv_picture" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
